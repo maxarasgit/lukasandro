@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ვიგებთ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white min-h-screen overflow-x-hidden">
+    <div class="fixed inset-0 z-0 pointer-events-none">
+        <div id="particles-js" class="w-full h-full"></div>
+    </div>
+    <header class="fixed w-full z-50 bg-black/70 backdrop-blur-md shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center justify-between w-full md:w-auto">
+                    <h1 class="text-2xl md:text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600 flex items-center">
+                        <i class="fas fa-bolt mr-2 text-blue-500"></i>lukasandro
+                    </h1>
+                    <button id="mobile-menu-toggle" class="md:hidden text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+                <nav id="mobile-menu" class="hidden md:flex fixed md:static top-16 left-0 w-full md:w-auto bg-black/90 md:bg-transparent">
+                    <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 w-full md:w-auto p-4 md:p-0">
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition transform hover:scale-110 flex items-center justify-center md:justify-start">
+                            <i class="fas fa-home mr-2"></i>Home
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition transform hover:scale-110 flex items-center justify-center md:justify-start">
+                            <i class="fas fa-list mr-2"></i>Accounts
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition transform hover:scale-110 flex items-center justify-center md:justify-start">
+                            <i class="fas fa-th-large mr-2"></i>Categories
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition transform hover:scale-110 flex items-center justify-center md:justify-start">
+                            <i class="fas fa-life-ring mr-2"></i>Support
+                        </a>
+                    </div>
+                </nav>
+                <div id="auth-buttons" class="hidden md:flex items-center space-x-4">
+                    <button class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 md:px-6 py-2 rounded-full hover:from-blue-700 hover:to-purple-700 transition transform hover:scale-105 shadow-lg flex items-center text-sm md:text-base">
+                        <i class="fas fa-sign-in-alt mr-2"></i>Login
+                    </button>
+                    <button class="border-2 border-blue-500 text-blue-500 px-4 md:px-6 py-2 rounded-full hover:bg-blue-500 hover:text-white transition transform hover:scale-105 flex items-center text-sm md:text-base">
+                        <i class="fas fa-user-plus mr-2"></i>Register
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="pt-24 container mx-auto px-4 relative z-10">
+          <section class="mb-20 relative">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-center md:text-left">
+                    <h2 class="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600 leading-tight">
+                        All types of digital accounts
+                    </h2>
+                    <p class="text-base md:text-xl text-gray-300 leading-relaxed">
+                        Experience seamless digital access with our verified, secure, and instantly delivered premium accounts across multiple platforms.
+                    </p>
+                    <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center md:justify-start">
+                        <button class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-full hover:from-blue-700 hover:to-purple-700 transition transform hover:scale-105 shadow-2xl flex items-center justify-center">
+                            <i class="fas fa-rocket mr-3"></i>Explore Accounts
+                        </button>
+                        <button class="border-2 border-blue-400 text-blue-400 px-6 py-3 rounded-full hover:bg-blue-400 hover:text-white transition transform hover:scale-105 flex items-center justify-center">
+                            <i class="fas fa-info-circle mr-3"></i>Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="hidden md:grid grid-cols-3 gap-6">
+                    <div class="bg-gray-800/50 backdrop-blur-lg rounded-2xl p-4 md:p-6 text-center transform hover:scale-110 transition duration-300 hover:shadow-2xl hover:bg-gray-700/50 shadow-xl relative overflow-hidden">
+                        <div class="text-4xl md:text-5xl mb-4 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">🎮</div>
+                        <h4 class="text-base md:text-xl font-semibold mb-2">Gaming</h4>
+                        <p class="text-gray-400 text-xs md:text-sm">Worldwide Access</p>
+                    </div>
+                    <div class="bg-gray-800/50 backdrop-blur-lg rounded-2xl p-4 md:p-6 text-center transform hover:scale-110 transition duration-300 hover:shadow-2xl hover:bg-gray-700/50 shadow-xl relative overflow-hidden">
+                        <div class="text-4xl md:text-5xl mb-4 bg-gradient-to-r from-green-500 to-blue-600 bg-clip-text text-transparent">🎬</div>
+                        <h4 class="text-base md:text-xl font-semibold mb-2">Streaming</h4>
+                        <p class="text-gray-400 text-xs md:text-sm">Premium Plans</p>
+                    </div>
+                    <div class="bg-gray-800/50 backdrop-blur-lg rounded-2xl p-4 md:p-6 text-center transform hover:scale-110 transition duration-300 hover:shadow-2xl hover:bg-gray-700/50 shadow-xl relative overflow-hidden">
+                        <div class="text-4xl md:text-5xl mb-4 bg-gradient-to-r from-pink-500 to-red-600 bg-clip-text text-transparent">🎵</div>
+                        <h4 class="text-base md:text-xl font-semibold mb-2">Music</h4>
+                        <p class="text-gray-400 text-xs md:text-sm">Lifetime Access</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-20">
+            <h3 class="text-3xl md:text-4xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
+                Top Account Categories
+            </h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+                <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-4 md:p-8 text-center transform hover:scale-105 transition duration-300 hover:bg-gray-700/50 shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-blue-500/20 w-32 h-32 rounded-full blur-2xl -z-10"></div>
+                    <div class="text-4xl md:text-6xl mb-4 md:mb-6 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h4 class="text-base md:text-2xl font-semibold mb-2">Gaming Accounts</h4>
+                    <p class="text-gray-400 text-xs md:text-sm">Steam, PlayStation, Xbox</p>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-4 md:p-8 text-center transform hover:scale-105 transition duration-300 hover:bg-gray-700/50 shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-green-500/20 w-32 h-32 rounded-full blur-2xl -z-10"></div>
+                    <div class="text-4xl md:text-6xl mb-4 md:mb-6 bg-gradient-to-r from-green-500 to-blue-600 bg-clip-text text-transparent">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h4 class="text-base md:text-2xl font-semibold mb-2">Streaming Accounts</h4>
+                    <p class="text-gray-400 text-xs md:text-sm">Netflix, Hulu, Disney+</p>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-4 md:p-8 text-center transform hover:scale-105 transition duration-300 hover:bg-gray-700/50 shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-pink-500/20 w-32 h-32 rounded-full blur-2xl -z-10"></div>
+                    <div class="text-4xl md:text-6xl mb-4 md:mb-6 bg-gradient-to-r from-pink-500 to-red-600 bg-clip-text text-transparent">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h4 class="text-base md:text-2xl font-semibold mb-2">Music Accounts</h4>
+                    <p class="text-gray-400 text-xs md:text-sm">Spotify, Apple Music</p>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-4 md:p-8 text-center transform hover:scale-105 transition duration-300 hover:bg-gray-700/50 shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-yellow-500/20 w-32 h-32 rounded-full blur-2xl -z-10"></div>
+                    <div class="text-4xl md:text-6xl mb-4 md:mb-6 bg-gradient-to-r from-yellow-500 to-orange-600 bg-clip-text text-transparent">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h4 class="text-base md:text-2xl font-semibold mb-2">Social Accounts</h4>
+                    <p class="text-gray-400 text-xs md:text-sm">Instagram, TikTok</p>
+                </div>
+            </div>
+        </section>
+        <section class="mb-20">
+            <h3 class="text-3xl md:text-4xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
+                Featured Accounts
+            </h3>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300 hover:shadow-blue-500/50 relative">
+                    <div class="h-48 md:h-64 bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center">
+                        <i class="fas fa-gamepad text-6xl md:text-9xl text-white"></i>
+                    </div>
+                    <div class="p-4 md:p-8">
+                        <h4 class="text-2xl md:text-3xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-600">
+                            Steam Accounts
+                        </h4>
+                        <p class="text-gray-300 mb-4 text-sm md:text-base">Premium Accounts with Rare Games</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-600">
+                                $39.99
+                            </span>
+                            <button class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 md:px-6 py-2 rounded-full hover:from-blue-700 hover:to-purple-700 transition transform hover:scale-105 flex items-center text-sm md:text-base">
+                                <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300 hover:shadow-green-500/50 relative">
+                    <div class="h-48 md:h-64 bg-gradient-to-r from-green-600 to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-film text-6xl md:text-9xl text-white"></i>
+                    </div>
+                    <div class="p-4 md:p-8">
+                        <h4 class="text-2xl md:text-3xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-600">
+                            Netflix Accounts
+                        </h4>
+                        <p class="text-gray-300 mb-4 text-sm md:text-base">Premium 4K Accounts with Warranty</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-600">
+                                $14.99
+                            </span>
+                            <button class="bg-gradient-to-r from-green-600 to-blue-600 text-white px-4 md:px-6 py-2 rounded-full hover:from-green-700 hover:to-blue-700 transition transform hover:scale-105 flex items-center text-sm md:text-base">
+                                <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300 hover:shadow-pink-500/50 relative sm:col-span-2 lg:col-span-1">
+                    <div class="h-48 md:h-64 bg-gradient-to-r from-pink-600 to-red-600 flex items-center justify-center">
+                        <i class="fas fa-music text-6xl md:text-9xl text-white"></i>
+                    </div>
+                    <div class="p-4 md:p-8">
+                        <h4 class="text-2xl md:text-3xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-red-600">
+                            Spotify Accounts
+                        </h4>
+                        <p class="text-gray-300 mb-4 text-sm md:text-base">Premium Lifetime Accounts</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-red-600">
+                                $19.99
+                            </span>
+                            <button class="bg-gradient-to-r from-pink-600 to-red-600 text-white px-4 md:px-6 py-2 rounded-full hover:from-pink-700 hover:to-red-700 transition transform hover:scale-105 flex items-center text-sm md:text-base">
+                                <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-20">
+            <h3 class="text-3xl md:text-4xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
+                What Our Users Say
+            </h3>
+            <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+                <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-4 md:p-8 text-center relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-blue-500/20 w-32 h-32 rounded-full blur-2xl -z-10"></div>
+                    <div class="text-4xl md:text-6xl mb-4 text-yellow-500">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic text-sm md:text-base">
+                        "am saitit sami milioni davzoge"
+                    </p>
+                    <div class="flex justify-center items-center space-x-4">
+                        <div class="w-12 md:w-16 h-12 md:h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white text-sm md:text-base">
+                            LS
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-base md:text-lg">Luka Spartaka</h4>
+                            <p class="text-gray-400 text-xs md:text-sm">programisti</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-4 md:p-8 text-center relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-green-500/20 w-32 h-32 rounded-full blur-2xl -z-10"></div>
+                    <div class="text-4xl md:text-6xl mb-4 text-yellow-500">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic text-sm md:text-base">
+                        "am saitit sami milioni davzoge."
+                    </p>
+                    <div class="flex justify-center items-center space-x-4">
+                        <div class="w-12 md:w-16 h-12 md:h-16 bg-gradient-to-r from-green-500 to-blue-600 rounded-full flex items-center justify-center text-white text-sm md:text-base">
+                            MM
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-base md:text-lg">Maxara Maxara</h4>
+                            <p class="text-gray-400 text-xs md:text-sm">programisti</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-4 md:p-8 text-center relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-pink-500/20 w-32 h-32 rounded-full blur-2xl -z-10"></div>
+                    <div class="text-4xl md:text-6xl mb-4 text-yellow-500">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic text-sm md:text-base">
+                        es saiti brwyinvalea.
+                    </p>
+                    <div class="flex justify-center items-center space-x-4">
+                        <div class="w-12 md:w-16 h-12 md:h-16 bg-gradient-to-r from-pink-500 to-red-600 rounded-full flex items-center justify-center text-white text-sm md:text-base">
+                            SM
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-base md:text-lg">saitis moyvaruli</h4>
+                            <p class="text-gray-400 text-xs md:text-sm">saitis moyvaruli</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-black/60 backdrop-blur-sm py-12 md:py-16 relative">
+        <div class="container mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
+            <div class="col-span-2 md:col-span-1">
+                <h5 class="text-2xl md:text-2xl font-bold mb-4 md:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
+                    lukasandro
+                </h5>
+                <p class="text-gray-400 leading-relaxed text-sm md:text-base">
+                    Your trusted gateway to premium digital experiences with instant, secure account delivery.
+                </p>
+                <div class="flex space-x-4 mt-4 md:mt-6">
+                    <a href="#" class="text-gray-300 hover:text-blue-400 transition"><i class="fab fa-facebook text-xl md:text-2xl"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-blue-400 transition"><i class="fab fa-twitter text-xl md:text-2xl"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-blue-400 transition"><i class="fab fa-instagram text-xl md:text-2xl"></i></a>
+                </div>
+            </div>
+            <div>
+                <h5 class="text-lg md:text-2xl font-bold mb-4 text-blue-500">Quick Links</h5>
+                <ul class="space-y-2 md:space-y-4">
+                    <li><a href="#" class="text-gray-300 text-sm md:text-base hover:text-blue-500 transition">Home</a></li>
+                    <li><a href="#" class="text-gray-300 text-sm md:text-base hover:text-blue-500 transition">Account Types</a></li>
+                    <li><a href="#" class="text-gray-300 text-sm md:text-base hover:text-blue-500 transition">Pricing</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-lg md:text-2xl font-bold mb-4 text-blue-500">Support</h5>
+                <ul class="space-y-2 md:space-y-4">
+                    <li><a href="#" class="text-gray-300 text-sm md:text-base hover:text-blue-500 transition">Help Center</a></li>
+                    <li><a href="#" class="text-gray-300 text-sm md:text-base hover:text-blue-500 transition">FAQ</a></li>
+                    <li><a href="#" class="text-gray-300 text-sm md:text-base hover:text-blue-500 transition">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-lg md:text-2xl font-bold mb-4 text-blue-500">Legal</h5>
+                <ul class="space-y-2 md:space-y-4">
+                    <li><a href="#" class="text-gray-300 text-sm md:text-base hover:text-blue-500 transition">Terms of Service</a></li>
+                    <li><a href="#" class="text-gray-300 text-sm md:text-base hover:text-blue-500 transition">Privacy Policy</a></li>
+                    <li><a href="#" class="text-gray-300 text-sm md:text-base hover:text-blue-500 transition">Refund Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 mt-8 md:mt-10 text-center text-gray-400 border-t border-gray-700 pt-6">
+            <p class="text-sm md:text-base">&copy; 2024 lukasandro. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: '#3b82f6' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.5, random: false },
+                size: { value: 3, random: true },
+                line_linked: { enable: true, distance: 150, color: '#3b82f6', opacity: 0.4, width: 1 },
+                move: { enable: true, speed: 2, direction: 'none', random: false, straight: false, out_mode: 'out' }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: { onhover: { enable: true, mode: 'repulse' } }
+            }
+        });
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const authButtons = document.getElementById('auth-buttons');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            authButtons.classList.toggle('hidden');
+            if (!mobileMenu.classList.contains('hidden')) {
+                document.body.classList.add('overflow-hidden');
+                const overlay = document.createElement('div');
+                overlay.id = 'mobile-menu-overlay';
+                overlay.classList.add('fixed', 'inset-0', 'bg-black', 'bg-opacity-50', 'z-40');
+                document.body.appendChild(overlay);
+                overlay.addEventListener('click', () => {
+                    mobileMenuToggle.click();
+                });
+            } else {
+                document.body.classList.remove('overflow-hidden');
+                const overlay = document.getElementById('mobile-menu-overlay');
+                if (overlay) overlay.remove();
+            }
+        });
+    </script>
+</body>
+</html>
